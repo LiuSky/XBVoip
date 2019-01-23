@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		339FCB3821F8653F00FD180F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FCB3721F8653F00FD180F /* AppDelegate.swift */; };
+		339FCB3A21F8653F00FD180F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FCB3921F8653F00FD180F /* ViewController.swift */; };
+		339FCB3D21F8653F00FD180F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339FCB3B21F8653F00FD180F /* Main.storyboard */; };
+		339FCB3F21F8654000FD180F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339FCB3E21F8654000FD180F /* Assets.xcassets */; };
+		339FCB4221F8654000FD180F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339FCB4021F8654000FD180F /* LaunchScreen.storyboard */; };
+		339FCB4D21F8656900FD180F /* MKSpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FCB4A21F8656900FD180F /* MKSpeechSynthesizer.swift */; };
+		339FCB4E21F8656900FD180F /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FCB4B21F8656900FD180F /* Data+.swift */; };
+		339FCB4F21F8656900FD180F /* XBVoipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FCB4C21F8656900FD180F /* XBVoipManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		339FCB3421F8653F00FD180F /* XBVoip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBVoip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339FCB3721F8653F00FD180F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		339FCB3921F8653F00FD180F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		339FCB3C21F8653F00FD180F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		339FCB3E21F8654000FD180F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		339FCB4121F8654000FD180F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		339FCB4321F8654000FD180F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339FCB4A21F8656900FD180F /* MKSpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSpeechSynthesizer.swift; sourceTree = "<group>"; };
+		339FCB4B21F8656900FD180F /* Data+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		339FCB4C21F8656900FD180F /* XBVoipManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBVoipManager.swift; sourceTree = "<group>"; };
+		339FCB5021F866AA00FD180F /* XBVoip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XBVoip.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		339FCB3121F8653F00FD180F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		339FCB2B21F8653F00FD180F = {
+			isa = PBXGroup;
+			children = (
+				339FCB3621F8653F00FD180F /* XBVoip */,
+				339FCB3521F8653F00FD180F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		339FCB3521F8653F00FD180F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				339FCB3421F8653F00FD180F /* XBVoip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		339FCB3621F8653F00FD180F /* XBVoip */ = {
+			isa = PBXGroup;
+			children = (
+				339FCB5021F866AA00FD180F /* XBVoip.entitlements */,
+				339FCB4921F8656900FD180F /* Core */,
+				339FCB3721F8653F00FD180F /* AppDelegate.swift */,
+				339FCB3921F8653F00FD180F /* ViewController.swift */,
+				339FCB3B21F8653F00FD180F /* Main.storyboard */,
+				339FCB3E21F8654000FD180F /* Assets.xcassets */,
+				339FCB4021F8654000FD180F /* LaunchScreen.storyboard */,
+				339FCB4321F8654000FD180F /* Info.plist */,
+			);
+			path = XBVoip;
+			sourceTree = "<group>";
+		};
+		339FCB4921F8656900FD180F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				339FCB4A21F8656900FD180F /* MKSpeechSynthesizer.swift */,
+				339FCB4B21F8656900FD180F /* Data+.swift */,
+				339FCB4C21F8656900FD180F /* XBVoipManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		339FCB3321F8653F00FD180F /* XBVoip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339FCB4621F8654000FD180F /* Build configuration list for PBXNativeTarget "XBVoip" */;
+			buildPhases = (
+				339FCB3021F8653F00FD180F /* Sources */,
+				339FCB3121F8653F00FD180F /* Frameworks */,
+				339FCB3221F8653F00FD180F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XBVoip;
+			productName = XBVoip;
+			productReference = 339FCB3421F8653F00FD180F /* XBVoip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		339FCB2C21F8653F00FD180F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Sky;
+				TargetAttributes = {
+					339FCB3321F8653F00FD180F = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 339FCB2F21F8653F00FD180F /* Build configuration list for PBXProject "XBVoip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 339FCB2B21F8653F00FD180F;
+			productRefGroup = 339FCB3521F8653F00FD180F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				339FCB3321F8653F00FD180F /* XBVoip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339FCB3221F8653F00FD180F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339FCB4221F8654000FD180F /* LaunchScreen.storyboard in Resources */,
+				339FCB3F21F8654000FD180F /* Assets.xcassets in Resources */,
+				339FCB3D21F8653F00FD180F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		339FCB3021F8653F00FD180F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339FCB4F21F8656900FD180F /* XBVoipManager.swift in Sources */,
+				339FCB3A21F8653F00FD180F /* ViewController.swift in Sources */,
+				339FCB3821F8653F00FD180F /* AppDelegate.swift in Sources */,
+				339FCB4D21F8656900FD180F /* MKSpeechSynthesizer.swift in Sources */,
+				339FCB4E21F8656900FD180F /* Data+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		339FCB3B21F8653F00FD180F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339FCB3C21F8653F00FD180F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		339FCB4021F8654000FD180F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339FCB4121F8654000FD180F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		339FCB4421F8654000FD180F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		339FCB4521F8654000FD180F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		339FCB4721F8654000FD180F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XBVoip/XBVoip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BU9U9E5458;
+				INFOPLIST_FILE = XBVoip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.CJDZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		339FCB4821F8654000FD180F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XBVoip/XBVoip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BU9U9E5458;
+				INFOPLIST_FILE = XBVoip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.CJDZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		339FCB2F21F8653F00FD180F /* Build configuration list for PBXProject "XBVoip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339FCB4421F8654000FD180F /* Debug */,
+				339FCB4521F8654000FD180F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339FCB4621F8654000FD180F /* Build configuration list for PBXNativeTarget "XBVoip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339FCB4721F8654000FD180F /* Debug */,
+				339FCB4821F8654000FD180F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 339FCB2C21F8653F00FD180F /* Project object */;
+}
